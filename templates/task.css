@@ -1,0 +1,29 @@
+.taskbar {
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(187, 11, 11, 0.815);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+ 
+  .taskbar a {
+    color: #fff;
+    float: left;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+
+  .active {
+    background-color: #4CAF50;
+  }
+  
+
+  .taskbar::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

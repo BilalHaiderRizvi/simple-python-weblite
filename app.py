@@ -12,30 +12,12 @@ def about():
     return render_template('about.html')
 
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+
 #login & singup
-
-@app.route('/login', methods=['POST'])
-def login():
-    username = request.form['username']
-    password = request.form['password']
-    confirm_password = request.form['confirm_password']
-    
-
-    if password != confirm_password:
-        return 'Passwords do not match'
-    return 'Logged in successfully'
-
-
-@app.route('/signup', methods=['POST'])
-def signup():
-    new_username = request.form['new_username']
-    new_password = request.form['new_password']
-    confirm_new_password = request.form['confirm_new_password']
-    
-
-    if new_password != confirm_new_password:
-        return 'Passwords do not match'
-    return 'Signed up successfully'
 
 
 
